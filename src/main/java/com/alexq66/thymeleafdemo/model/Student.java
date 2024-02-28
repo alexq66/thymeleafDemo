@@ -1,5 +1,7 @@
 package com.alexq66.thymeleafdemo.model;
 
+import java.util.List;
+
 /**
  * Created by Kenneth Quinn on 2/27/2024
  */
@@ -9,6 +11,7 @@ public class Student {
     private String lastName;
     private String country;
     private String favoriteLanguage;
+    private List<String> favoriteSystems;
 
     public Student() {
 
@@ -44,5 +47,13 @@ public class Student {
 
     public void setFavoriteLanguage(String favoriteLanguage) {
         this.favoriteLanguage = favoriteLanguage;
+    }
+
+    public List<String> getFavoriteSystems() {
+        return favoriteSystems;
+    }
+
+    public void setFavoriteSystems(List<String> favoriteSystems) {
+        this.favoriteSystems = favoriteSystems;
     }
 }
